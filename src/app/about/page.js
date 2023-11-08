@@ -1,3 +1,5 @@
+import AboutComponent from "@/components/Common/About";
+
 export default function About() {
-  return <div>O nama</div>;
+  return <AboutComponent />;
 }

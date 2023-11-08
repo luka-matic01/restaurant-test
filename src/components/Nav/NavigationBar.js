@@ -8,27 +8,31 @@ export default function Home() {
   const pathname = usePathname();
 
   const backgroundColor = pathname === "/" ? "transparent" : "black";
-  const paddingNav = pathname === "/" ? "12" : "4";
-
-  console.log(backgroundColor);
 
   return (
     <nav
       className={`bg-${backgroundColor} dark:bg-transparent z-50 relative uppercase`}
     >
       <div
-        className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 lg:p-${paddingNav} lg:px-12`}
+        className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 lg:p-6 lg:px-12`}
       >
         <a href="https://flowbite.com/" className="flex items-center">
           <Image
             src="/restaurant-logo.png"
             alt="Hedonist logo"
+            className="hidden lg:block"
+            width={400}
+            height={100}
+          />
+
+          <Image
+            src="/restaurant-logo1.png"
+            alt="Hedonist logo"
+            className="lg:hidden block"
             width={100}
             height={100}
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-            HEDONIST
-          </span>
+          <h1 className="text-white text-[24px] block lg:hidden">HEDONIST</h1>
         </a>
         <div className="md:hidden">
           <button

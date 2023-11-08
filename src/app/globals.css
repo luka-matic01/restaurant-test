@@ -5,3 +5,48 @@
 nav {
   background-color: transparent;
 }
+
+hr {
+  transform: rotate(2deg);
+  position: relative;
+  border: none;
+  height: 1px;
+  background: black;
+}
+hr:nth-of-type(even) {
+  transform: rotate(-2deg);
+}
+hr:before {
+  content: "C";
+  font-size: 2em;
+  display: inline-block;
+  transform: translateY(-0.6em) translateX(-0.5em) rotate(-25deg)
+    rotateX(-180deg);
+  width: 2em;
+}
+hr:after {
+  content: "C";
+  font-size: 2em;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  transform: translateY(-0.6em) translateX(0.65em) rotate(-29deg)
+    rotateY(180deg);
+  width: 2em;
+}
+hr:nth-of-type(even):before {
+  content: "C";
+  font-size: 2em;
+  display: inline-block;
+  transform: translateY(-0.65em) translateX(-0.5em) rotate(20deg);
+  width: 2em;
+}
+hr:nth-of-type(even):after {
+  content: "C";
+  font-size: 2em;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  transform: translateY(-0.6em) translateX(0.65em) rotate(-154deg);
+  width: 2em;
+}

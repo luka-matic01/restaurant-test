@@ -5,6 +5,7 @@ import Homepage from "@/components/Homepage/Homepage";
 import Menu from "@/components/Common/Menu";
 import About from "@/components/Common/About";
 import Contact from "@/components/Common/Contact";
+import Footer from "@/components/Nav/Footer";
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
           <Homepage />
         </div>
 
-        <Menu />
         <About />
         <Contact />
-      </div>{" "}
+      </div>
+      <Footer />
     </div>
   );
 }

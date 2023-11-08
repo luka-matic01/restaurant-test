@@ -1,3 +1,5 @@
+import ContactComponent from "@/components/Common/Contact";
+
 export default function Contact() {
-  return <div>Kontakt</div>;
+  return <ContactComponent />;
 }

@@ -4,12 +4,18 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
-    <div className="flex flex-col my-6 w-full justify-center items-center">
-      <div className="justify-center items-center flex w-full">
-        <h1>Kontaktirajte nas</h1>
+    <div className="flex flex-col my-6 w-full justify-center items-center  max-h-[400px]">
+      <div className="py-8">
+        <div class="flex items-center">
+          <hr class="flex-grow w-[200px] max-w-[80px] lg:max-w-[200px]  text-white border-t border-black" />
+          <span class="px-3 text-black text-[18px] lg:text-[36px]">
+            KONTAKT
+          </span>
+          <hr class="flex-grow w-[200px] max-w-[80px] lg:max-w-[200px] test-white border-t border-black" />
+        </div>
       </div>
-      <div className="flex items-center lg:items-start flex-col gap-6 w-full p-2 lg:p-20 lg:justify-center justify-start">
-        <h1>Kontaktirajte nas</h1>
+      <div className="flex items-center lg:items-start flex-col gap-6 w-full p-2 lg:px-20 pt-6 lg:justify-center justify-start">
+        <h1 className="font-bold text-[24px]">Kontaktirajte nas</h1>
         <div className="flex flex-col gap-4">
           <div className="flex flex-row gap-3">
             <h1>
