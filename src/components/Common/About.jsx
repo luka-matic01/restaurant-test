@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full flex lg:bg-[#816d6d33] py-8 lg:py-14 px-6">
+    <div className="w-full flex lg:bg-[#816d6d33] py-8 lg:py-14 px-6 text-[#36394c]">
       <div className="flex items-center justify-center w-full flex-col lg:flex-row gap-6 lg:gap-0">
         <div className="flex w-full items-center flex-col">
           <div className="flex flex-col items-center justify-center gap-1 mb-16">

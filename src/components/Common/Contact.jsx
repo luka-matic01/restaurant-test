@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col my-6 w-full justify-center items-center  max-h-[700px]">
+    <div className="flex flex-col my-6 w-full justify-center items-center  max-h-[700px] text-[#36394c]">
       <div className="flex flex-col items-center justify-center gap-1 mb-16">
         <h1 className="uppercase text-[18px] lg:text-[32px] font-bold">
           Kontakt

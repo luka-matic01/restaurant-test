@@ -7,7 +7,7 @@ export default function Home() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const pathname = usePathname();
 
-  const backgroundColor = pathname === "/" ? "transparent" : "black";
+  const backgroundColor = pathname === "/" ? "transparent" : "[#36394c]";
 
   return (
     <nav
