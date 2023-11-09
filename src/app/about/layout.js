@@ -1,11 +1,14 @@
+import Footer from "@/components/Nav/Footer";
+
 export const metadata = {
   title: "O nama",
 };
 
 const AboutLayout = ({ children }) => {
   return (
-    <section className="flex flex-col h-screen justify-start w-full">
+    <section className="flex flex-col  justify-start w-full">
       {children}
+      <Footer />
     </section>
   );
 };

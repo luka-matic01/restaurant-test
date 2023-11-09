@@ -63,7 +63,7 @@ export default function Home() {
           }`}
         >
           {/* Your menu items */}
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border text-white  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:border-gray-700">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 text-[16px] md:text-[13px] lg:text-[14px] xl:text-[16px] font-medium border text-white  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:border-gray-700">
             <li>
               <a
                 href="#"

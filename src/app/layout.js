@@ -1,9 +1,8 @@
-import { Libre_Baskerville } from "next/font/google";
+import { Old_Standard_TT } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/Nav/NavigationBar";
-import Footer from "@/components/Nav/Footer";
 
-const playfair_display = Libre_Baskerville({
+const playfair_display = Old_Standard_TT({
   subsets: ["latin"],
   weight: "400",
 });
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
               <NavigationBar />
             </div>
             <div> {children}</div>
-            <Footer />
           </div>
         </div>
       </body>
