@@ -8,7 +8,6 @@ const GalleryLayout = ({ children }) => {
   return (
     <section className="flex flex-col h-screen justify-start w-full">
       {children}
-      <Footer />
     </section>
   );
 };

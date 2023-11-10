@@ -50,3 +50,22 @@ hr:nth-of-type(even):after {
   transform: translateY(-0.6em) translateX(0.65em) rotate(-154deg);
   width: 2em;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  scroll-margin: 1rem;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  scroll-margin: 1rem;
+  border: 0.5px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  scroll-margin: 1rem;
+  background-color: #36394c;
+}

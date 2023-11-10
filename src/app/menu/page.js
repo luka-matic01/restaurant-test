@@ -1,4 +1,6 @@
 "use client";
+import MenuComponent from "@/components/Common/Menu";
+
 export default function Menu() {
-  return <div>Meni</div>;
+  return <MenuComponent />;
 }

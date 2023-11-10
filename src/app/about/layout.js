@@ -8,7 +8,6 @@ const AboutLayout = ({ children }) => {
   return (
     <section className="flex flex-col  justify-start w-full">
       {children}
-      <Footer />
     </section>
   );
 };

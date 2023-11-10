@@ -1,6 +1,7 @@
 import { Old_Standard_TT } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Nav/NavigationBar";
+import Footer from "@/components/Nav/Footer";
 
 const playfair_display = Old_Standard_TT({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="z-20"> {children}</div>
           </div>
+          <Footer />
         </div>
       </body>
     </html>

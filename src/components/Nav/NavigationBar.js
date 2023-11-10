@@ -20,7 +20,7 @@ function NavBar() {
         pathname === "/" && "absolute  top-0 left-0 right-0"
       } z-50`}
     >
-      <div className="justify-between items-center px-4 mx-auto uppercase lg:max-w-7xl lg:items-center lg:flex lg:px-8">
+      <div className="justify-between items-center px-4 md:text-[15px] lg:text-[16px] mx-auto uppercase lg:max-w-7xl lg:items-center lg:flex lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
             {/* LOGO */}
@@ -64,7 +64,7 @@ function NavBar() {
               className="h-screen lg:h-auto space-y-10 lg:space-y-0 items-center justify-center lg:flex "
               style={{ zIndex: 999 }}
             >
-              <li className=" text-xl text-white py-2 lg:px-6 text-center border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+              <li className="  text-white py-2 lg:px-6 text-center border-b-2 lg:border-b-0     lg:hover:bg-transparent">
                 <a
                   href="/"
                   onClick={() => setNavbar(!navbar)}
@@ -75,7 +75,7 @@ function NavBar() {
                   Početna
                 </a>
               </li>
-              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+              <li className="  text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
                 <a
                   href="/menu"
                   onClick={() => setNavbar(!navbar)}
@@ -86,7 +86,7 @@ function NavBar() {
                   Jelovnik
                 </a>
               </li>
-              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+              <li className="  text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
                 <a
                   href="/gallery"
                   onClick={() => setNavbar(!navbar)}
@@ -97,7 +97,7 @@ function NavBar() {
                   Galerija
                 </a>
               </li>
-              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+              <li className="  text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
                 <a
                   href="/about"
                   onClick={() => setNavbar(!navbar)}
@@ -108,7 +108,7 @@ function NavBar() {
                   O nama
                 </a>
               </li>
-              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+              <li className="  text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
                 <a
                   href="/contact"
                   onClick={() => setNavbar(!navbar)}

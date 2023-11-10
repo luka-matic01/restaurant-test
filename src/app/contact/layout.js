@@ -6,10 +6,7 @@ export const metadata = {
 
 const ContactLayout = ({ children }) => {
   return (
-    <section className="flex flex-col justify-start w-full">
-      {children}
-      <Footer />
-    </section>
+    <section className="flex flex-col justify-start w-full">{children}</section>
   );
 };
 
