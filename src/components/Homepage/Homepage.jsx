@@ -3,11 +3,11 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <div className="relative" style={{ textAlign: "center" }}>
+    <div className="relative max-h-[600px]" style={{ textAlign: "center" }}>
       {/* Increase z-index for image container */}
       <div
         className="w-full relative"
-        style={{ height: "70vh", position: "relative" }}
+        style={{ height: "500px", position: "relative" }}
       >
         <Image
           alt="Fotografija restorana"

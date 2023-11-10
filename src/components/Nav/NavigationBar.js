@@ -1,113 +1,130 @@
 "use client";
 import Image from "next/image";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
-export default function Home() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+function NavBar() {
+  const [navbar, setNavbar] = useState(false);
   const pathname = usePathname();
 
-  const backgroundColor = pathname === "/" ? "transparent" : "[#36394c]";
+  useEffect(() => {
+    setNavbar(false);
+  }, []);
 
+  const backgroundColor =
+    pathname === "/" && navbar === false ? "transparent" : "[#36394c]";
   return (
     <nav
-      className={`bg-${backgroundColor} dark:bg-transparent z-50 relative uppercase`}
+      className={`w-full bg-${backgroundColor} ${
+        pathname === "/" && "absolute  top-0 left-0 right-0"
+      } z-50`}
     >
-      <div
-        className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 lg:p-6 lg:px-12`}
-      >
-        <a href="https://flowbite.com/" className="flex items-center">
-          <Image
-            src="/restaurant-logo.png"
-            alt="Hedonist logo"
-            className="hidden lg:block"
-            width={400}
-            height={100}
-          />
-
-          <Image
-            src="/restaurant-logo1.png"
-            alt="Hedonist logo"
-            className="lg:hidden block"
-            width={100}
-            height={100}
-          />
-          <h1 className="text-white text-[24px] block lg:hidden">HEDONIST</h1>
-        </a>
-        <div className="md:hidden">
-          <button
-            onClick={() => setNavbarOpen(!navbarOpen)} // Toggle the navbarOpen state
-            className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-          >
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 20 20"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+      <div className="justify-between items-center px-4 mx-auto uppercase lg:max-w-7xl lg:items-center lg:flex lg:px-8">
+        <div>
+          <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
+            {/* LOGO */}
+            <a href="/">
+              <Image
+                src="/restaurant-logo.png"
+                alt="Hedonist logo"
+                width={400}
+                height={100}
               />
-            </svg>
-            <span className="sr-only">Open main menu</span>
-          </button>
+              {/* <Image
+                src="/restaurant-logo1.png"
+                alt="Hedonist logo"
+                className="lg:hidden block"
+                width={100}
+                height={100}
+              /> */}
+            </a>
+            {/* HAMBURGER BUTTON FOR MOBILE */}
+            <div className="lg:hidden">
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => setNavbar(!navbar)}
+              >
+                {navbar ? (
+                  <AiOutlineClose size={25} className="text-white" />
+                ) : (
+                  <AiOutlineMenu size={25} className="text-white" />
+                )}
+              </button>
+            </div>
+          </div>
         </div>
-        <div
-          className={`md:flex md:w-auto md:order-1 ${
-            navbarOpen ? "block" : "hidden"
-          }`}
-        >
-          {/* Your menu items */}
-          <ul className="flex flex-col p-4 md:p-0 mt-4 text-[16px] md:text-[13px] lg:text-[14px] xl:text-[16px] font-medium border text-white  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:border-gray-700">
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-[#f28274] font-bold md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-              >
-                Početna
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f28274] font-bold md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Jelovnik
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f28274] font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Galerija
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f28274] font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                O nama
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#f28274] font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Kontakt
-              </a>
-            </li>
-          </ul>
+        <div>
+          <div
+            className={`flex-1  justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
+              navbar ? "p-12 lg:p-0 block" : "hidden"
+            }`}
+          >
+            <ul
+              className="h-screen lg:h-auto space-y-10 lg:space-y-0 items-center justify-center lg:flex "
+              style={{ zIndex: 999 }}
+            >
+              <li className=" text-xl text-white py-2 lg:px-6 text-center border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+                <a
+                  href="/"
+                  onClick={() => setNavbar(!navbar)}
+                  className={`hover:text-[#f28274] ${
+                    pathname === "/" ? "text-[#f28274]" : "text-white"
+                  }`}
+                >
+                  Početna
+                </a>
+              </li>
+              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+                <a
+                  href="/menu"
+                  onClick={() => setNavbar(!navbar)}
+                  className={`hover:text-[#f28274] ${
+                    pathname === "/menu" ? "text-[#f28274]" : "text-white"
+                  }`}
+                >
+                  Jelovnik
+                </a>
+              </li>
+              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+                <a
+                  href="/gallery"
+                  onClick={() => setNavbar(!navbar)}
+                  className={`hover:text-[#f28274] ${
+                    pathname === "/gallery" ? "text-[#f28274]" : "text-white"
+                  }`}
+                >
+                  Galerija
+                </a>
+              </li>
+              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+                <a
+                  href="/about"
+                  onClick={() => setNavbar(!navbar)}
+                  className={`hover:text-[#f28274] ${
+                    pathname === "/about" ? "text-[#f28274]" : "text-white"
+                  }`}
+                >
+                  O nama
+                </a>
+              </li>
+              <li className=" text-xl text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
+                <a
+                  href="/contact"
+                  onClick={() => setNavbar(!navbar)}
+                  className={`hover:text-[#f28274] ${
+                    pathname === "/contact" ? "text-[#f28274]" : "text-white"
+                  }`}
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   );
 }
+
+export default NavBar;
