@@ -57,6 +57,10 @@ hr:nth-of-type(even):after {
   height: 4px;
 }
 
+textShadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
 ::-webkit-scrollbar-track {
   border-radius: 4px;
   background-color: transparent;

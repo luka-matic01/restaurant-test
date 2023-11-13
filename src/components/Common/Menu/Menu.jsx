@@ -184,7 +184,7 @@ const Menu = () => {
             MENI
           </h1>
         </div>
-        <div className="flex items-center justify-center">
+        {/* <div className="flex items-center justify-center">
           <h1 className="text-center text-[18px] md:text-[18px] max-w-[700px]">
             Okusite naše jedinstvene i pažljivo pripremljene specijalitete dok
             uživate u sofisticiranom i ugodnom ambijentu Hedonista.
@@ -192,7 +192,7 @@ const Menu = () => {
             gastronomsko iskustvo koje ćete dugo pamtiti.
             <br /> Dobrodošli u Hedonist!
           </h1>
-        </div>
+        </div> */}
 
         <div className="flex items-center justify-center my-4 mx-4">
           <div className="flex items-center gap-5 text-[18px] max-w-[1200px] lg:text-[24px] overflow-x-scroll my-4">
@@ -236,13 +236,16 @@ const Menu = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-12 text-[18px] lg:text-[24px]">
           {mainCourse?.map((food) => (
-            <div key={food.id} className="flex flex-col   w-full">
-              <div className="flex flex-col gap-3">
+            <div
+              key={food.id}
+              className="flex flex-col  bg-[#ADD8E6] p-3 rounded-md justify-center w-full"
+            >
+              <div className="flex textShadow flex-col gap-3 ">
                 <div className="flex justify-between gap-6 ">
                   <div>
-                    <h1>{food?.name}</h1>
+                    <h1 className="text-shadow-xl">{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center  justify-center py-0.5 bg-[#36394c] text-white">
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
@@ -250,7 +253,7 @@ const Menu = () => {
               </div>
 
               <h1 className="opacity-30">
-                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
               </h1>
             </div>
           ))}
@@ -263,13 +266,16 @@ const Menu = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-12 text-[18px] lg:text-[24px]">
           {mainCourseFish?.map((food) => (
-            <div key={food.id} className="flex flex-col   w-full">
+            <div
+              key={food.id}
+              className="flex flex-col bg-orange-100 p-3 rounded-md  w-full"
+            >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6 ">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center  justify-center py-0.5 bg-[#f28274] text-white">
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
@@ -277,26 +283,29 @@ const Menu = () => {
               </div>
 
               <h1 className="opacity-30">
-                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
               </h1>
             </div>
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
+        <div className="flex flex-col items-center justify-center my-6 lg:mb-12 mt-12 lg:mt-24 ">
           <h1 className="text-[20px] lg:text-[32px] font-bold">
             PASTA I RIŽOTO
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-12 text-[18px] lg:text-[24px]">
           {pastaFood?.map((food) => (
-            <div key={food.id} className="flex flex-col   w-full">
+            <div
+              key={food.id}
+              className="flex flex-col bg-green-100 p-3 rounded-md w-full"
+            >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center  justify-center py-0.5 bg-[#2ebea5] text-white">
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
@@ -304,7 +313,7 @@ const Menu = () => {
               </div>
 
               <h1 className="opacity-30">
-                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
               </h1>
             </div>
           ))}

@@ -15,7 +15,7 @@ const Homepage = () => {
           layout="fill"
           objectFit="cover"
         />
-        <div className="absolute inset-0 bg-black opacity-60" />
+        <div className="absolute inset-0 bg-black opacity-70" />
       </div>
       <div
         style={{
