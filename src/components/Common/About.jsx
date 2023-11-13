@@ -7,26 +7,17 @@ const About = () => {
       <div className="flex items-center justify-center w-full flex-col lg:flex-row gap-6 lg:gap-0">
         <div className="flex w-full items-center flex-col">
           <div className="flex flex-col items-center justify-center gap-1 mb-16">
-            <Image
+            {/* <Image
               alt="O nama"
               src="/extravagant-line.png"
               width={400}
               height={100}
-            />
+            /> */}
             <h1 className="uppercase text-[18px] lg:text-[32px] font-bold">
               O nama
             </h1>
           </div>
 
-          {/* <div className="py-8">
-            <div class="flex items-center">
-              <hr class="flex-grow w-[200px] max-w-[80px] lg:max-w-[200px]  text-white border-t border-black" />
-              <span class="px-3 text-black text-[18px] lg:text-[36px]">
-                O NAMA
-              </span>
-              <hr class="flex-grow w-[200px] max-w-[80px] lg:max-w-[200px] test-white border-t border-black" />
-            </div>
-          </div> */}
           <h1 className="text-center text-[18px]">
             Naš restoran je mesto gde se hrana pretvara u osmehe. Sa svetlim
             ambijentom i atmosferom koja vas poziva da zaboravite na vreme, mi

@@ -59,7 +59,7 @@ hr:nth-of-type(even):after {
 
 ::-webkit-scrollbar-track {
   border-radius: 4px;
-  background-color: #e7e7e7;
+  background-color: transparent;
   scroll-margin: 1rem;
   border: 0.5px solid #cacaca;
 }
@@ -67,5 +67,5 @@ hr:nth-of-type(even):after {
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   scroll-margin: 1rem;
-  background-color: #36394c;
+  background-color: transparent;
 }

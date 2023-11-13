@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
             </div>
             <div className="z-20"> {children}</div>
           </div>
-          <Footer />
         </div>
       </body>
     </html>

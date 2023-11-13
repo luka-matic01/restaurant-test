@@ -11,7 +11,7 @@ const Homepage = () => {
       >
         <Image
           alt="Fotografija restorana"
-          src="/restaurant-photo.jpg"
+          src="/restaurant-food.jpg"
           layout="fill"
           objectFit="cover"
         />
@@ -29,7 +29,7 @@ const Homepage = () => {
           </h1>
 
           <button className="uppercase text-[15px] lg:text-[18px] px-12 py-2 bg-[#c55a4b] hover:bg-[#833b32] text-white">
-            Prikaži jelovnik
+            POGLEDAJ MENI
           </button>
         </div>
       </div>

@@ -2,7 +2,6 @@
 
 //* File imports
 import Homepage from "@/components/Homepage/Homepage";
-import Menu from "@/components/Common/Menu";
 import About from "@/components/Common/About";
 import Contact from "@/components/Common/Contact";
 import Footer from "@/components/Nav/Footer";

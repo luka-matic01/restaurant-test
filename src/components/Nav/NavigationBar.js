@@ -83,7 +83,7 @@ function NavBar() {
                     pathname === "/menu" ? "text-[#f28274]" : "text-white"
                   }`}
                 >
-                  Jelovnik
+                  Meni
                 </a>
               </li>
               <li className="  text-white py-2 px-6 text-center  border-b-2 lg:border-b-0     lg:hover:bg-transparent">
