@@ -3,8 +3,32 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full flex lg:bg-[#c1a6a633] py-8 lg:py-14 px-6 text-[#36394c]">
-      <div className="flex items-center justify-center w-full flex-col lg:flex-row gap-6 lg:gap-0">
+    <div
+      className="w-full flex flex-col 
+     text-[#36394c]"
+    >
+      <div
+        style={{
+          backgroundImage: 'url("/image.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", // Center horizontally
+          justifyContent: "center", // Center vertically
+        }}
+        className="w-full  h-[600px] relative px-6"
+      >
+        <h1 className="text-white uppercase">since 2020</h1>
+        <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
+          O nama
+        </h1>
+        <h2 className="text-[18px] text-white text-center lg:text-[24px] max-w-[600px] mt-6 lg:mt-12">
+          Otkrijte neodoljive ukuse u našem jelovniku koji spaja vrhunsku
+          kulinarsku vještinu s pažljivo odabranim sastojcima.
+        </h2>
+      </div>
+      <div className="flex items-center justify-center lg:bg-[#c1a6a633] py-8 lg:py-14 px-6 w-full flex-col lg:flex-row gap-6 lg:gap-0">
         <div className="flex w-full items-center flex-col">
           <div className="flex flex-col items-center justify-center gap-1 mb-16">
             {/* <Image

@@ -6,7 +6,10 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-[#36394c]">
+    <div
+      className="w-full flex flex-col 
+     text-[#36394c]"
+    >
       <div
         style={{
           backgroundImage: 'url("/image.jpg")',
@@ -19,15 +22,13 @@ const Contact = () => {
         }}
         className="w-full  h-[600px] relative px-6"
       >
-        <h1 className="text-white">CONTACT US</h1>
-
+        <h1 className="text-white uppercase">since 2020</h1>
         <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
-          KONTAKT
+          O nama
         </h1>
         <h2 className="text-[18px] text-white text-center lg:text-[24px] max-w-[600px] mt-6 lg:mt-12">
-          Stojimo Vam na raspolaganju za bilo kakve potrebe ili specifične
-          zahtijeve. Radujemo se Vašem dolasku i prilici da Vas ugostimo u našem
-          restoranu.
+          Otkrijte neodoljive ukuse u našem jelovniku koji spaja vrhunsku
+          kulinarsku vještinu s pažljivo odabranim sastojcima.
         </h2>
       </div>
 

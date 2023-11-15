@@ -5,6 +5,7 @@ import Homepage from "@/components/Homepage/Homepage";
 import About from "@/components/Common/About";
 import Contact from "@/components/Common/Contact";
 import Footer from "@/components/Nav/Footer";
+import MainDishes from "@/components/Homepage/MainDishes";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <div className="w-full">
           <Homepage />
         </div>
+
+        <MainDishes />
 
         <About />
         <Contact />
