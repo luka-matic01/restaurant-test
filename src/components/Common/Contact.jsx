@@ -6,20 +6,32 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col my-6 w-full justify-center items-center  max-h-[700px] text-[#36394c]">
-      <div className="flex flex-col items-center justify-center gap-1 mb-16">
-        {/* <Image
-          alt="Kontakt"
-          src="/extravagant-line.png"
-          width={400}
-          height={100}
-        /> */}
-        <h1 className="uppercase text-[18px] lg:text-[32px] font-bold">
-          Kontakt
+    <div className="flex flex-col items-center justify-center text-[#36394c]">
+      <div
+        style={{
+          backgroundImage: 'url("/image.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", // Center horizontally
+          justifyContent: "center", // Center vertically
+        }}
+        className="w-full  h-[600px] relative px-6"
+      >
+        <h1 className="text-white">CONTACT US</h1>
+
+        <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
+          KONTAKT
         </h1>
+        <h2 className="text-[18px] text-white text-center lg:text-[24px] max-w-[600px] mt-6 lg:mt-12">
+          Stojimo Vam na raspolaganju za bilo kakve potrebe ili specifične
+          zahtijeve. Radujemo se Vašem dolasku i prilici da Vas ugostimo u našem
+          restoranu.
+        </h2>
       </div>
-      <div className="flex items-center lg:items-start flex-col gap-6 w-full p-2 lg:px-20 pt-6 lg:justify-center justify-start">
-        <h1 className="font-bold text-[24px]">Kontaktirajte nas</h1>
+
+      <div className="flex items-center lg:items-start flex-col gap-6 w-full p-2 lg:px-20 pt-12 lg:justify-center justify-start">
         <h1 className="text-center lg:text-start lg:text-[24px] flex justify-center items-center text-[17px]">
           Dobrodošli u naš restoran! Za sve dodatne informacije, rezervacije ili
           upite, molimo Vas koristite sljedeće kontakt informacije:
@@ -50,11 +62,6 @@ const Contact = () => {
             </h1>
           </div>
         </div>
-        <h1 className="text-center lg:text-start lg:text-[24px] text-[17px]">
-          Stojimo Vam na raspolaganju za bilo kakve potrebe ili specifične
-          zahtijeve. Radujemo se Vašem dolasku i prilici da Vas ugostimo u našem
-          restoranu.
-        </h1>
       </div>
     </div>
   );

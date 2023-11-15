@@ -197,6 +197,7 @@ const Menu = () => {
         }}
         className="w-full  h-[600px] relative px-6"
       >
+        <h1 className="text-white">OUR MENU</h1>
         <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
           MENI
         </h1>
@@ -206,37 +207,6 @@ const Menu = () => {
         </h2>
       </div>
       <div className="px-6 w-full max-w-[1400px]">
-        <div className="flex flex-col items-center justify-center gap-1 my-8">
-          {/* <Image
-          alt="O nama"
-          src="/extravagant-line.png"
-          width={400}
-          height={100}
-        /> */}
-        </div>
-        {/* <div className="flex items-center justify-center">
-          <h1 className="text-center text-[18px] md:text-[18px] max-w-[700px]">
-            Okusite naše jedinstvene i pažljivo pripremljene specijalitete dok
-            uživate u sofisticiranom i ugodnom ambijentu Hedonista.
-            <br /> Spremni smo zadovoljiti sva Vaša čula i pružiti Vam
-            gastronomsko iskustvo koje ćete dugo pamtiti.
-            <br /> Dobrodošli u Hedonist!
-          </h1>
-        </div> */}
-
-        <div className="flex items-center justify-center my-4 mx-4">
-          <div className="flex items-center gap-5 text-[18px] max-w-[1200px] lg:text-[24px] overflow-x-scroll my-4">
-            {courses?.map((c) => (
-              <div
-                key={c}
-                className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white"
-              >
-                {c}
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
           <h1 className="text-[20px] lg:text-[32px] font-bold">
             GLAVNA JELA (MESO)

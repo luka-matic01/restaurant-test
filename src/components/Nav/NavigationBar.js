@@ -16,7 +16,7 @@ function NavBar() {
     pathname === "/" && navbar === false ? "transparent" : "[#36394c]";
   return (
     <nav
-      className={`w-full bg-${backgroundColor} ${
+      className={`w-full relative bg-transparent ${
         pathname === "/" && "absolute  top-0 left-0 right-0"
       } z-50`}
     >
