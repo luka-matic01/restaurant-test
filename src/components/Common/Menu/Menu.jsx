@@ -170,8 +170,41 @@ const Menu = () => {
     },
   ];
 
+  const courses = [
+    "Glavna jela",
+    "Glavna jela (riba)",
+    "Pasta i rižoto",
+    "Vege kutak",
+    "Doručak",
+    "Predjela",
+    "Supe",
+    "Obrok salate",
+    "Dječiji kutak",
+    "Deserti",
+  ];
+
   return (
     <div className=" text-[#36394c] flex flex-col items-center justify-center">
+      <div
+        style={{
+          backgroundImage: 'url("/image.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", // Center horizontally
+          justifyContent: "center", // Center vertically
+        }}
+        className="w-full  h-[600px] relative px-6"
+      >
+        <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
+          MENI
+        </h1>
+        <h2 className="text-[18px] text-white text-center lg:text-[24px] max-w-[600px] mt-6 lg:mt-12">
+          Otkrijte neodoljive ukuse u našem jelovniku koji spaja vrhunsku
+          kulinarsku vještinu s pažljivo odabranim sastojcima.
+        </h2>
+      </div>
       <div className="px-6 w-full max-w-[1400px]">
         <div className="flex flex-col items-center justify-center gap-1 my-8">
           {/* <Image
@@ -180,9 +213,6 @@ const Menu = () => {
           width={400}
           height={100}
         /> */}
-          <h1 className="uppercase text-[18px] lg:text-[32px] font-bold">
-            MENI
-          </h1>
         </div>
         {/* <div className="flex items-center justify-center">
           <h1 className="text-center text-[18px] md:text-[18px] max-w-[700px]">
@@ -196,36 +226,14 @@ const Menu = () => {
 
         <div className="flex items-center justify-center my-4 mx-4">
           <div className="flex items-center gap-5 text-[18px] max-w-[1200px] lg:text-[24px] overflow-x-scroll my-4">
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Glavna jela (meso)
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Glavna jela (riba)
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Pasta i rižoto
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Vege kutak
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Doručak
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Predjela
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Supe
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Obrok salate
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Dječiji kutak
-            </div>
-            <div className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white">
-              Deserti
-            </div>
+            {courses?.map((c) => (
+              <div
+                key={c}
+                className="px-4 py-1 border-2 rounded-xl text-center whitespace-nowrap bg-[#f28274] text-white"
+              >
+                {c}
+              </div>
+            ))}
           </div>
         </div>
 
