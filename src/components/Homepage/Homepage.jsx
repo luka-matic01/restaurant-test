@@ -23,7 +23,14 @@ const Homepage = () => {
         className="absolute left-[50%] top-[60%] z-10 text-white"
       >
         <div className="flex flex-col items-center justify-center gap-8">
-          <h1 className="">DOBRODOŠLI U HEDONIST</h1>
+          <div className="flex flex-row items-center gap-4">
+            <Image width={40} height={10} src="/line.png" alt="linija" />
+            <h1 className="text-[12px] md:text-[18px]">
+              DOBRODOŠLI U HEDONIST
+            </h1>
+            <Image width={40} height={10} src="/line.png" alt="linija" />
+          </div>
+
           <h1 className="text-[24px] md:text-[32px] lg:text-[42px]">
             Pravi gastro užitak na Vrbasu!
           </h1>

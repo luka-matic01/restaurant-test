@@ -19,7 +19,12 @@ const About = () => {
         }}
         className="w-full  h-[600px] relative px-6"
       >
-        <h1 className="text-white uppercase">since 2020</h1>
+        <div className="flex flex-row items-center gap-4">
+          <Image width={40} height={10} src="/line.png" alt="linija" />
+          <h1 className="text-white uppercase">since 2020</h1>
+          <Image width={40} height={10} src="/line.png" alt="linija" />
+        </div>
+
         <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
           O nama
         </h1>
