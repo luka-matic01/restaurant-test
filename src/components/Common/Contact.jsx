@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div
       className="w-full flex flex-col 
-     text-[#36394c] mb-12"
+     text-[#36394c] mb-12 "
     >
       <div
         style={{
@@ -37,12 +37,14 @@ const Contact = () => {
         </h2>
       </div>
 
-      <div className="flex items-center lg:items-start flex-col gap-6 w-full p-2 lg:px-20 pt-12 lg:justify-center justify-start">
-        <h1 className="text-center lg:text-start lg:text-[24px] flex justify-center items-center text-[17px]"></h1>
+      <div className="px-6 flex items-center lg:items-start flex-col gap-6 w-full p-2 lg:px-20 pt-12 lg:justify-center justify-start">
+        <h1 className="text-center w-full font-semibold lg:text-[24px] flex justify-center items-center text-[17px]">
+          Kontaktirajte nas
+        </h1>
         <div className="flex flex-col gap-4 w-full">
           <div className="flex flex-col md:flex-row gap-6 items-center lg:items-start justify-around w-full">
             <ContactForm />
-            <div className="flex flex-col gap-4 justify-between min-h-[550px]">
+            <div className="lg:mt-4 my-8 lg:my-0 flex flex-col gap-4 ">
               <h1 className="max-w-[500px] text-center lg:text-start text-[18px] font-semibold mb-6 lg:mb-12">
                 Ako imate bilo kakva pitanja, prijedloge, sugestije ili želite
                 podijeliti pohvale, slobodno nas kontaktirajte. Tu smo da
@@ -76,15 +78,6 @@ const Contact = () => {
                     info@restoranmarcopolo.com{" "}
                   </h1>
                 </div>
-              </div>
-
-              <div className="flex items-center justify-center gap-4">
-                <h1 className=" bg-[#2ebea5] hover:bg-[#36394c] p-3 rounded-full">
-                  <AiFillInstagram size={35} className="text-white" />
-                </h1>
-                <h1 className=" bg-[#2ebea5] hover:bg-[#36394c] p-3 rounded-full">
-                  <AiFillFacebook size={35} className="text-white" />
-                </h1>
               </div>
             </div>
           </div>

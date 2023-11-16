@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Homepage = () => {
   return (
@@ -34,9 +35,12 @@ const Homepage = () => {
           <h1 className="text-[24px] md:text-[32px] lg:text-[42px]">
             Pravi gastro užitak na Vrbasu!
           </h1>
-          <button className="uppercase text-[15px] lg:text-[18px] px-12 py-2 bg-[#c55a4b] hover:bg-[#833b32] text-white">
-            POGLEDAJ MENI
-          </button>
+          <Link
+            href="/menu"
+            className="uppercase rounded-md text-[15px] lg:text-[18px] px-12 py-2 bg-[#c55a4b] hover:bg-[#833b32] cursor-pointer text-white"
+          >
+            POGLEDAJTE MENI
+          </Link>
         </div>
       </div>
     </div>

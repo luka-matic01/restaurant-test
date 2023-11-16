@@ -184,7 +184,7 @@ const Menu = () => {
   ];
 
   return (
-    <div className=" text-[#36394c] flex flex-col items-center justify-center">
+    <div className=" text-[#36394c] flex flex-col items-center justify-center pb-6">
       <div
         style={{
           backgroundImage: 'url("/image.jpg")',
@@ -289,8 +289,6 @@ const Menu = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -13,10 +13,6 @@ const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="max-w-xl mx-auto  rounded-md flex flex-col"
     >
-      <h1 className="font-bold mb-6 lg:mb-12 text-[18px]  md:text-[24px]">
-        KONTAKTIRAJTE NAS
-      </h1>
-
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <label
@@ -91,7 +87,7 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      <button className="w-full bg-[#2ebea5] px-6 lg:px-12 py-2 text-white hover:bg-[#36394c]">
+      <button className="w-full rounded-md bg-[#2ebea5] px-6 lg:px-12 py-2 text-white hover:bg-[#36394c]">
         POŠALJITE PORUKU
       </button>
     </form>

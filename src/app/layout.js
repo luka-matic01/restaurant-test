@@ -1,8 +1,9 @@
-import { Nanum_Myeongjo } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Nav/NavigationBar";
+import Footer from "@/components/Nav/Footer";
 
-const playfair_display = Nanum_Myeongjo({
+const playfair_display = Montserrat({
   subsets: ["latin"],
   weight: "400",
 });
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
             <div className="z-50">
               <Navbar />
             </div>
-            <div className="z-20"> {children}</div>
+            <div className="z-20">{children}</div>
           </div>
         </div>
       </body>
