@@ -61,7 +61,7 @@ const MainDishes = () => {
         </h1>
         <Image src="/blue-line.png" width={560} height={2} alt="linija" />
       </div>
-      <div className="flex w-full gap-6 lg:gap-16 px-6 flex-col md:flex-row justify-center  items-center my-6 ">
+      <div className="flex w-full gap-6 lg:gap-16 px-6 flex-col lg:flex-row justify-center  items-center my-6 ">
         <Card
           imgSrc="/card-food.jpg"
           price="24,00 KM"

@@ -1,8 +1,11 @@
-import Footer from "@/components/Nav/Footer";
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const Menu = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const mainCourse = [
     {
       id: 1,
@@ -199,16 +202,32 @@ const Menu = () => {
       >
         <div className="flex flex-row items-center gap-4">
           <Image width={40} height={10} src="/line.png" alt="linija" />
-          <h1 className="text-white">OUR MENU</h1>
+          <motion.div
+            ref={ref}
+            initial={{ y: -80, opacity: 0 }}
+            animate={{ y: isInView ? 0 : -80, opacity: isInView ? 1 : 0 }}
+            exit={{ y: -80, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
+          >
+            <h1 className="text-white">OUR MENU</h1>
+          </motion.div>
           <Image width={40} height={10} src="/line.png" alt="linija" />
         </div>
-        <h1 className="uppercase text-[48px] lg:text-[64px] font-bold text-white">
-          MENI
-        </h1>
-        <h2 className="text-[18px] text-white text-center lg:text-[24px] max-w-[600px] mt-6 lg:mt-12">
-          Otkrijte neodoljive ukuse u našem jelovniku koji spaja vrhunsku
-          kulinarsku vještinu s pažljivo odabranim sastojcima.
-        </h2>
+        <motion.div
+          ref={ref}
+          initial={{ y: -80, opacity: 0 }}
+          animate={{ y: isInView ? 0 : -80, opacity: isInView ? 1 : 0 }}
+          exit={{ y: -80, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
+        >
+          <h1 className="uppercase flex w-full justify-center text-[48px] lg:text-[64px] font-bold text-white">
+            MENI
+          </h1>
+          <h2 className="text-[18px] text-white text-center lg:text-[24px] max-w-[600px] mt-6 lg:mt-12">
+            Otkrijte neodoljive ukuse u našem jelovniku koji spaja vrhunsku
+            kulinarsku vještinu s pažljivo odabranim sastojcima.
+          </h2>
+        </motion.div>
       </div>
       <div className="px-6 w-full max-w-[1400px]">
         <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
