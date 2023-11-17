@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { AiFillPhone, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 
 const Footer = () => {
   return (

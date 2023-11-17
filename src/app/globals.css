@@ -9,6 +9,7 @@ nav {
 .card-container {
   position: relative;
   overflow: hidden;
+  border-radius: 0.75rem;
 }
 
 .card-wrapper::before {
@@ -28,9 +29,9 @@ nav {
     0,
     0,
     0,
-    0.5
+    0.3
   ); /* Adjust the background color and opacity as needed */
-  box-shadow: 0 12px 81px rgba(0, 0, 0, 0.6); /* Add box shadow properties */
+  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2); /* Add box shadow properties */
 }
 
 hr {

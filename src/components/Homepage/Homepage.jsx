@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const Homepage = () => {
   return (
-    <div className="relative max-h-[600px]" style={{ textAlign: "center" }}>
+    <div className="relative max-h-[700px]" style={{ textAlign: "center" }}>
       {/* Increase z-index for image container */}
       <div
         className="w-full relative"
-        style={{ height: "500px", position: "relative" }}
+        style={{ height: "600px", position: "relative" }}
       >
         <Image
           alt="Fotografija restorana"
