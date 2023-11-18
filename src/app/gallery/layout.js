@@ -6,7 +6,7 @@ export const metadata = {
 
 const GalleryLayout = ({ children }) => {
   return (
-    <section className="flex flex-col h-screen justify-start w-full">
+    <section className="flex flex-col  justify-start w-full">
       {children}
     </section>
   );

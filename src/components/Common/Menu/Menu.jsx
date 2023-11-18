@@ -173,17 +173,214 @@ const Menu = () => {
     },
   ];
 
-  const courses = [
-    "Glavna jela",
-    "Glavna jela (riba)",
-    "Pasta i rižoto",
-    "Vege kutak",
-    "Doručak",
-    "Predjela",
-    "Supe",
-    "Obrok salate",
-    "Dječiji kutak",
-    "Deserti",
+  const breakfastFood = [
+    {
+      id: 1,
+      name: "Doručak Hedonist",
+      description: "3 jaja, slanina, domaći sir, kobasica",
+      price: "11,00 KM",
+    },
+    {
+      id: 2,
+      name: "Omlet pršut",
+      description: "jaja, pršut, feta sir, rukola",
+      price: "8,00 KM",
+    },
+    {
+      id: 3,
+      name: "Punjene prženice",
+      description: "jaja, tost, šunka, sir",
+      price: "8,00 KM",
+    },
+    {
+      id: 4,
+      name: "Tortilja sa piletinom",
+      description: "piletina, paprika, kukuruz, pomfrit",
+      price: "9,00 KM",
+    },
+    {
+      id: 5,
+      name: "Uštipci",
+      description: "pršut, kajmak",
+      price: "9,00 KM",
+    },
+    {
+      id: 6,
+      name: "Sendvič tunjevina",
+      description: "tuna, paradajz, ajsberg, krompirići",
+      price: "8,00 KM",
+    },
+  ];
+
+  const deserts = [
+    {
+      id: 1,
+      name: "Arija ukusa",
+      description: "čokoladni biskvit, mliječna belgijska čokolada, narandža",
+      price: "7,00 KM",
+    },
+    {
+      id: 2,
+      name: "Brownie sa sladoledom",
+      description: "čokolada, kruška iz kompota, jaja",
+      price: "8,00 KM",
+    },
+    {
+      id: 3,
+      name: "Cheesecake limun",
+      description: "maskarpone sir, slatka pavlaka, plazma, limun",
+      price: "7,00 KM",
+    },
+    {
+      id: 4,
+      name: "Baklava",
+      description: "orasi, plazma",
+      price: "5,00 KM",
+    },
+    {
+      id: 5,
+      name: "Tri leće",
+      description: "biskvit, kondenzovano mlijeko, slatka pavlaka, karamel",
+      price: "6,00 KM",
+    },
+    {
+      id: 6,
+      name: "Panna Cotta",
+      description: "slatka pavlaka, šumsko voće",
+      price: "7,00 KM",
+    },
+    {
+      id: 7,
+      name: "Kremšnita",
+      description: "lisnato tijesto, vanila krem, slatka pavlaka",
+      price: "6,00 KM",
+    },
+    {
+      id: 8,
+      name: "Sladoled fantazija",
+      description: "",
+      price: "8,00 KM",
+    },
+  ];
+
+  const appetizers = [
+    {
+      id: 1,
+      name: "Naša selekcija",
+      description:
+        "pršut, domaća peka, kajmak, gorgonzola, masline, dimljeni sir, livanjski sir",
+      price: "40,00 KM",
+    },
+    {
+      id: 2,
+      name: "Tatar biftek",
+      description: "",
+      price: "50,00 KM",
+    },
+    {
+      id: 3,
+      name: "Pršut",
+      description: "svinjski/goveđi",
+      price: "12,00 KM",
+    },
+    {
+      id: 4,
+      name: "Plata sireva",
+      description:
+        "gorgonzola, kravlji sir, livanjski sir, dimljeni sir, rukola, cherry",
+      price: "25,00 KM",
+    },
+    {
+      id: 5,
+      name: "Bruskete sa dimljenim lososom",
+      description: "dimljeni losos, pesto, šeri paradajz, rukola",
+      price: "13,50 KM",
+    },
+    {
+      id: 6,
+      name: "Bruskete sa mocarelom i pečenim paradajzom",
+      description: "paradajz, mocarela, pesto sos",
+      price: "9,00 KM",
+    },
+  ];
+  const salads = [
+    {
+      id: 1,
+      name: "Salata sa sočnom piletinom (gril/pohovana)",
+      description:
+        "miks salata, grilovana piletina, šeri paradajz, slanina, ajoli dresing",
+      price: "15,00 KM",
+    },
+    {
+      id: 2,
+      name: "Salata lignje sa susamom",
+      description:
+        "miks salata, lignje, krastavac, susam, dresing od soka limete i posne majoneze",
+      price: "16,50 KM",
+    },
+    {
+      id: 3,
+      name: "Salata sa biftekom",
+      description:
+        "miks salata, biftek, tamni dresing, susam, krastavac, šeri paradajz, Grana Pedano sir",
+      price: "17,50 KM",
+    },
+  ];
+  const vegan = [
+    {
+      id: 1,
+      name: "Grilovano povrće",
+      description: "",
+      price: "10,00 KM",
+    },
+    {
+      id: 2,
+      name: "Rižoto sa povrćem",
+      description: "",
+      price: "14,50 KM",
+    },
+    {
+      id: 3,
+      name: "Vege pasta",
+      description: "taljatele, šampinjoni, vrganji, mix povrća",
+      price: "14,00 KM",
+    },
+  ];
+
+  const soups = [
+    {
+      id: 1,
+      name: "Pileća supa sa rezancima",
+      description: "",
+      price: "5,00 KM",
+    },
+    {
+      id: 2,
+      name: "Teleća čorba",
+      description: "",
+      price: "7,00 KM",
+    },
+    {
+      id: 3,
+      name: "Potaž od povrća",
+      description: "",
+      price: "6,00 KM",
+    },
+  ];
+
+  const foodForKids = [
+    {
+      id: 1,
+      name: "Chicken fingers",
+      description: "panirani pileći file sa krompirićima",
+      price: "10,00 KM",
+    },
+    {
+      id: 2,
+      name: "Mini pasta 4 vrste sira",
+      description: "",
+      price: "12,00 KM",
+    },
   ];
 
   return (
@@ -299,6 +496,202 @@ const Menu = () => {
                     <h1>{food?.name}</h1>
                   </div>
                   <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold uppercase">
+            DESERTI
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {deserts?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6 ">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold">DORUČAK</h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {breakfastFood?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6 ">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col items-center justify-center my-6 lg:mb-12 mt-12 lg:mt-24 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold">PREDJELA</h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {appetizers?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-green-100 p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold uppercase">
+            OBROK SALATE
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {salads?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6 ">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col items-center justify-center my-6 lg:my-12 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold">
+            DJEČIJI KUTAK
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {foodForKids?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6 ">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col items-center justify-center my-6 lg:mb-12 mt-12 lg:mt-24 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold">VEGE KUTAK</h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {vegan?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-green-100 p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-col items-center justify-center my-6 lg:mb-12 mt-12 lg:mt-24 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold">SUPE</h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {soups?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
+                    <h1>{food?.price}</h1>
+                  </div>
+                </div>
+                <h2 className="text-[14px]">{food.description}</h2>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col items-center justify-center my-6 lg:mb-12 mt-12 lg:mt-24 ">
+          <h1 className="text-[20px] lg:text-[32px] font-bold">
+            PRILOG SALATE
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-start gap-12 text-[18px] lg:text-[24px] flex flex-wrap">
+          {soups?.map((food) => (
+            <div
+              key={food.id}
+              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6">
+                  <div>
+                    <h1>{food?.name}</h1>
+                  </div>
+                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>

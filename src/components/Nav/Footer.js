@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 
@@ -22,12 +23,18 @@ const Footer = () => {
           Restoran Hedonist © 2023 / Sva Prava zadržana
         </h1>
         <div className="flex items-center justify-center gap-4">
-          <h1 className=" bg-[#f28274] p-3 rounded-full">
+          <Link
+            href="https://www.instagram.com/restoranhedonist/"
+            className=" bg-[#f28274] cursor-pointer p-3 rounded-full"
+          >
             <AiFillInstagram size={25} className="text-white" />
-          </h1>
-          <h1 className=" bg-[#f28274] p-3 rounded-full">
+          </Link>
+          <Link
+            href="https://www.facebook.com/restoranhedonist"
+            className=" bg-[#f28274] cursor-pointer p-3 rounded-full"
+          >
             <AiFillFacebook size={25} className="text-white" />
-          </h1>
+          </Link>
         </div>
       </div>
     </div>

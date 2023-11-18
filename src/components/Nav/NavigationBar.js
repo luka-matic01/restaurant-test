@@ -22,15 +22,19 @@ const Navbar = () => {
 
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#ffffff");
-        setTextColor("#000000");
-      } else {
-        setColor("transparent");
-        setTextColor("#ffffff");
+      if (typeof window !== undefined) {
+        if (window.scrollY >= 90) {
+          setColor("#ffffff");
+          setTextColor("#000000");
+        } else {
+          setColor("transparent");
+          setTextColor("#ffffff");
+        }
       }
     };
-    window.addEventListener("scroll", changeColor);
+    if (typeof window !== undefined) {
+      window.addEventListener("scroll", changeColor);
+    }
   }, []);
 
   return (
@@ -163,12 +167,18 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4">
-            <h1 className=" bg-[#f28274] p-3 rounded-full">
+            <Link
+              href="https://www.instagram.com/restoranhedonist/"
+              className=" bg-[#f28274] cursor-pointer p-3 rounded-full"
+            >
               <AiFillInstagram size={25} className="text-white" />
-            </h1>
-            <h1 className=" bg-[#f28274] p-3 rounded-full">
+            </Link>
+            <Link
+              href="https://www.facebook.com/restoranhedonist"
+              className=" bg-[#f28274] p-3 rounded-full"
+            >
               <AiFillFacebook size={25} className="text-white" />
-            </h1>
+            </Link>
           </div>
         </div>
       </div>

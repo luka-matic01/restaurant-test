@@ -6,6 +6,9 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import ContactForm from "../Contact/ContactForm";
 import { useRef } from "react";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("../Map/Map"), { ssr: false });
 
 const Contact = () => {
   const ref = useRef(null);
@@ -87,7 +90,7 @@ const Contact = () => {
                     <AiFillPhone size={25} className="text-white" />
                   </h1>
                   <h1 className="text-[18px] lg:text-[20px] font-semibold">
-                    +387 65 459 901
+                    +387 65 736 751
                   </h1>
                 </div>
                 <div className="flex flex-row gap-5 items-center">
@@ -95,7 +98,7 @@ const Contact = () => {
                     <MdEmail size={25} className="text-white" />
                   </h1>
                   <h1 className="text-[18px] lg:text-[20px] font-semibold">
-                    info@restoranmarcopolo.com{" "}
+                    banjaluka.hedonist@gmail.com
                   </h1>
                 </div>
               </div>
@@ -103,6 +106,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Map />
     </div>
   );
 };

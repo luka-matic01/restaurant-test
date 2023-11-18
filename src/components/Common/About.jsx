@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div
       className="w-full flex flex-col 
-     bg-slate-100 text-black "
+      text-black "
     >
       <div
         style={{
@@ -64,7 +64,7 @@ const About = () => {
           <Image width={200} height={20} src="/title-shape.png" alt="Linija" />
         </div>
         <div>
-          <h1 className="text-center text-[18px] flex text-[#36394c]">
+          <h1 className="text-center text-[18px] flex text-[#36394c] font-semibold max-w-[1200px]">
             Restoran Hedonist na Vrbasu je gastronomski dragulj otvoren 2020.
             godine u srcu Banjaluke. Svojom jedinstvenom kombinacijom ukusnih
             jela i predivnog ambijenta pored rijeke Vrbas, Hedonist nudi

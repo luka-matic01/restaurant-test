@@ -1,29 +1,43 @@
-// MyForm.js
-import { useEffect } from "react";
-import { useForm, Controller } from "react-hook-form";
+"use client";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 const ContactForm = () => {
+  const [isMessage, setIsMessage] = useState("");
+
   const {
     handleSubmit,
     register,
-    clearErrors,
+    reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  const onSubmit = async (data, event) => {
+    event.preventDefault();
+    const send = {
+      type: "contact",
+      email: data.email,
+      poruka: data.poruka,
+      naslovPoruke: data.naslovPoruke,
+      ime: data.ime,
+      prezime: data.prezime,
+    };
 
-  useEffect(() => {
-    if (errors) {
-      const timeoutId = setTimeout(() => {
-        clearErrors(); // Reset the form and clear errors
-      }, 5000); // 5000 milliseconds (5 seconds)
-      console.log("hi");
-      // Cleanup the timeout to avoid unnecessary side effects
-      return () => clearTimeout(timeoutId);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(send),
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    if (response.status === 200) {
+      reset();
+      setIsMessage(`Hvala Vam ${data.ime}, Vaša poruka je poslana!`);
+      setTimeout(() => {
+        setIsMessage("");
+      }, 5000);
     }
-    return () => clearTimeout(timeoutId);
-  }, [errors, clearErrors]);
+  };
 
   return (
     <form
@@ -101,8 +115,8 @@ const ContactForm = () => {
             {...register("naslovPoruke", {
               required: "Naslov poruke je obavezan.",
             })}
-            className={`appearance-none block w-full bg-gray-200 text-gray-700 borderborder-gray-200
-             rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-[#2ebea5]`}
+            className={`appearance-none  block w-full bg-gray-200 text-gray-700 border border-gray-200
+   rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-[#2ebea5]`}
             type="text"
             placeholder="Naslov poruke"
           />
@@ -116,7 +130,7 @@ const ContactForm = () => {
           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1">
             PORUKA
           </label>
-          <input
+          <textarea
             {...register("poruka", { required: "Poruka je obavezna." })}
             className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200
              rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-[#2ebea5]`}
@@ -130,7 +144,11 @@ const ContactForm = () => {
           )}
         </div>
       </div>
-
+      {isMessage && (
+        <div className="my-4 bg-green-300 px-6 py-2 text-black">
+          <span>{isMessage}</span>
+        </div>
+      )}
       <button className="w-full rounded-md bg-[#2ebea5] px-6 lg:px-12 py-2 text-white hover:bg-[#36394c]">
         POŠALJITE PORUKU
       </button>
