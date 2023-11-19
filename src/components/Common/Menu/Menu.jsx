@@ -436,19 +436,20 @@ const Menu = () => {
           {mainCourse?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-[#ADD8E6] gap-3 p-3 rounded-md justify-between h-full"
             >
-              <div className="flex textShadow flex-col gap-3">
-                <div className="flex justify-between items-start gap-6">
+              <div className="flex flex-col gap-3">
+                <div className="flex justify-between gap-6 ">
                   <div>
-                    <h1 className="text-shadow-xl">{food?.name}</h1>
+                    <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] self-start  text-center flex items-center rounded-sm justify-center py-0.5 bg-[#36394c] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#36394c] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <div className="text-[14px]">{food.description}</div>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -462,19 +463,20 @@ const Menu = () => {
           {mainCourseFish?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-orange-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6 ">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#f28274] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -488,19 +490,20 @@ const Menu = () => {
           {pastaFood?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-green-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-green-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#2ebea5] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -514,19 +517,20 @@ const Menu = () => {
           {deserts?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-[#ADD8E6] gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6 ">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#36394c] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -538,19 +542,20 @@ const Menu = () => {
           {breakfastFood?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-orange-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6 ">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#f28274] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -561,19 +566,20 @@ const Menu = () => {
           {appetizers?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-green-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-green-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#2ebea5] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -586,19 +592,20 @@ const Menu = () => {
           {salads?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-[#ADD8E6] gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
-                <div className="flex justify-between gap-6 ">
+                <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#36394c] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
+                {/* Description moved outside the flex container */}
               </div>
+              <div className="mt-auto text-[14px]">{food.description}</div>
             </div>
           ))}
         </div>
@@ -611,19 +618,20 @@ const Menu = () => {
           {foodForKids?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-orange-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6 ">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#f28274] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -635,19 +643,20 @@ const Menu = () => {
           {vegan?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-green-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-green-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#2ebea5] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#2ebea5] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -659,19 +668,20 @@ const Menu = () => {
           {soups?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-[#ADD8E6] p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-[#ADD8E6] gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#36394c] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#36394c] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
@@ -684,19 +694,20 @@ const Menu = () => {
           {soups?.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col bg-orange-100 p-3 rounded-md justify-between h-full"
+              className="flex flex-col bg-orange-100 gap-3 p-3 rounded-md justify-between h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between gap-6">
                   <div>
                     <h1>{food?.name}</h1>
                   </div>
-                  <div className="px-2 lg:text-[18px] text-[14px] md:text-[16px] text-center flex items-center rounded-sm  justify-center py-0.5 bg-[#f28274] text-white">
+                  <div className="flex-shrink-0 lg:text-[18px] text-[14px] md:text-[16px] self-start text-center px-2 py-1 flex items-center rounded-sm justify-center bg-[#f28274] text-white">
                     <h1>{food?.price}</h1>
                   </div>
                 </div>
-                <h2 className="text-[14px]">{food.description}</h2>
               </div>
+
+              <h2 className="mt-auto text-[14px]">{food.description}</h2>
             </div>
           ))}
         </div>
