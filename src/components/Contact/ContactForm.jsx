@@ -132,7 +132,7 @@ const ContactForm = () => {
           </label>
           <textarea
             {...register("poruka", { required: "Poruka je obavezna." })}
-            className={`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200
+            className={`appearance-none max-h-[100px] block w-full bg-gray-200 text-gray-700 border border-gray-200
              rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-[#2ebea5]`}
             type="text"
             placeholder="Poruka"
