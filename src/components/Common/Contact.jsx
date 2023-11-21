@@ -72,9 +72,7 @@ const Contact = () => {
                 Ako imate bilo kakva pitanja, prijedloge, sugestije ili želite
                 podijeliti pohvale, slobodno nas kontaktirajte. Tu smo da
                 odgovorimo na Vaše poruke i sa zadovoljstvom ćemo čuti Vaše
-                mišljenje. Vaša povratna informacija je za nas veoma važna i
-                doprinosi unaprijeđenju naših usluga. Hvala Vam što ste dio naše
-                zajednice!
+                mišljenje. Kontakt forma ne služi za rezervacije!
               </h1>
               <div className="flex flex-col gap-4">
                 <div className="flex flex-row gap-5 items-center">
@@ -98,7 +96,7 @@ const Contact = () => {
                     <MdEmail size={25} className="text-white" />
                   </h1>
                   <h1 className="text-[18px] lg:text-[20px] font-semibold">
-                    banjaluka.hedonist@gmail.com
+                    restoran@hedonist.com
                   </h1>
                 </div>
               </div>
