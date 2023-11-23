@@ -6,7 +6,7 @@ export async function POST(req, res) {
     let mail;
 
     mail = {
-      from: `restoran@hedonist.com`,
+      from: `banjaluka.hedonist@gmail.com`,
       to: `restoran@hedonist.com`,
       subject: `${naslovPoruke}`,
       html: `

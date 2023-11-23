@@ -23,7 +23,7 @@ const Card = ({ imgSrc, price, title, description, bgColor }) => {
             width={370}
             height={250}
             alt="Fotografija"
-            className="rounded-t-xl"
+            className="rounded-t-xl object-cover max-h-[250px]"
           />
           <span
             className={`absolute top-0 right-0 px-6 py-2 text-bold rounded-md bg-${bgColor} text-white`}
@@ -63,22 +63,24 @@ const MainDishes = () => {
       </div>
       <div className="flex w-full gap-6 lg:gap-16 px-6 flex-col lg:flex-row justify-center  items-center my-6 ">
         <Card
-          imgSrc="/card-food.jpg"
+          imgSrc="/gallery1.jpg"
           price="24,00 KM"
+          width={375}
           title="Teletina Hedonist (250 g)"
           description="teletina sa mladim krompirom u kajmaku"
           bgColor="[#36394c]"
         />
         <Card
-          imgSrc="/card-food.jpg"
+          imgSrc="/gallery5.jpg"
           price="19,00 KM"
           title="Hedonist piletina"
           description="rolovana piletina sa čedar sirom i slaninom, podloga od rukole i miks povrća iz voka, krem sos od sira"
           bgColor="[#c55a4b]"
         />
         <Card
-          imgSrc="/card-food.jpg"
+          imgSrc="/gallery3.jpg"
           price="27,00 KM"
+          width={375}
           title="Ramstek Rio (250g)"
           description="ramstek, mladi krompir, kajmak"
           bgColor="[#2ebea5]"

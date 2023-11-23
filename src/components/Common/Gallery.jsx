@@ -8,16 +8,24 @@ const Gallery = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const imageUrls = [
-    "/food-menu.jpg",
-    "/gallery-image.jpg",
-    "/restaurant-photo.jpg",
-    "/food-menu.jpg",
-    "/gallery-image.jpg",
-    "/restaurant-photo.jpg",
-    // Add more image URLs as needed
-  ];
+  const imageObjects = [
+    { id: 4, url: "/gallery4.jpg" },
+    { id: 6, url: "/gallery6.jpg" },
+    { id: 7, url: "/gallery7.jpg" },
+    { id: 8, url: "/gallery8.jpg" },
+    { id: 9, url: "/gallery9.jpg" },
+    { id: 10, url: "/gallery10.jpg" },
+    { id: 11, url: "/gallery11.jpg" },
+    { id: 12, url: "/gallery12.jpg" },
+    { id: 13, url: "/gallery13.jpg" },
+    { id: 14, url: "/gallery14.jpg" },
+    { id: 1, url: "/gallery1.jpg" },
+    { id: 2, url: "/gallery2.jpg" },
+    { id: 3, url: "/gallery3.jpg" },
+    { id: 5, url: "/gallery5.jpg" },
 
+    // ... add more image objects as needed
+  ];
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
   const openLightbox = (index) => {
@@ -108,17 +116,17 @@ const Gallery = () => {
 
       <div className="flex items-center justify-center bg-[#c1a6a633] py-8 lg:py-24 px-6 w-full flex-col lg:flex-row gap-12 lg:gap-0">
         {/* Display a list of images */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {imageUrls.map((imageUrl, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10 ">
+          {imageObjects.map((imageUrl) => (
             <div
-              className="relative max-w-[400px] min-h-[300px]"
-              key={index}
-              onClick={() => openLightbox(index)}
+              className="relative max-w-[400px]"
+              key={imageUrl.id}
+              onClick={() => openLightbox(imageUrl.id)}
             >
               <Image
-                src={imageUrl}
-                alt={`Image ${index + 1}`}
-                className="rounded-xl"
+                src={imageUrl.url}
+                alt={`Image ${imageUrl.id}`}
+                className="rounded-xl max-h-[200px] object-cover"
                 width={300}
                 height={300}
                 layout="responsive"
@@ -150,10 +158,10 @@ const Gallery = () => {
           </button>
 
           <Image
-            src={imageUrls[lightboxIndex]}
-            alt={`Image ${lightboxIndex + 1}`}
+            src={imageObjects[lightboxIndex].url}
+            alt={`Image ${imageObjects[lightboxIndex].id}`}
             width={800}
-            className="rounded-xl"
+            className="rounded-xl object-cover"
             height={600}
           />
 
