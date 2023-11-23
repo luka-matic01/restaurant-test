@@ -13,7 +13,7 @@ const About = () => {
     >
       <div
         style={{
-          backgroundImage: 'url("/image.jpg")',
+          backgroundImage: 'url("/about-image.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",

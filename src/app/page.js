@@ -15,7 +15,9 @@ export default function Home() {
           <Homepage />
         </div>
 
-        <MainDishes />
+        <div className="relative w-full">
+          <MainDishes />
+        </div>
 
         <About />
         <Contact />

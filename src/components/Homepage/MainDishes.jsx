@@ -48,7 +48,7 @@ const Card = ({ imgSrc, price, title, description, bgColor }) => {
 
 const MainDishes = () => {
   return (
-    <div className="flex w-full flex-col bg-slate-100 py-12">
+    <div className="flex w-full flex-col  py-12">
       <div className="flex gap-3 w-full justify-center items-center mb-6 lg:mb-8">
         <Image src="/gold-line.png" width={40} height={2} alt="linija" />
         <h1 className="text-[#D1B000]">GASTRO UŽITAK</h1>

@@ -37,12 +37,12 @@ const Gallery = () => {
   };
 
   const nextImage = () => {
-    setLightboxIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+    setLightboxIndex((prevIndex) => (prevIndex + 1) % imageObjects.length);
   };
 
   const prevImage = () => {
     setLightboxIndex((prevIndex) =>
-      prevIndex === 0 ? imageUrls.length - 1 : prevIndex - 1
+      prevIndex === 0 ? imageObjects.length - 1 : prevIndex - 1
     );
   };
 
@@ -117,16 +117,16 @@ const Gallery = () => {
       <div className="flex items-center justify-center bg-[#c1a6a633] py-8 lg:py-24 px-6 w-full flex-col lg:flex-row gap-12 lg:gap-0">
         {/* Display a list of images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10 ">
-          {imageObjects.map((imageUrl) => (
+          {imageObjects.map((imageUrl, index) => (
             <div
               className="relative max-w-[400px]"
               key={imageUrl.id}
-              onClick={() => openLightbox(imageUrl.id)}
+              onClick={() => openLightbox(index)}
             >
               <Image
                 src={imageUrl.url}
                 alt={`Image ${imageUrl.id}`}
-                className="rounded-xl max-h-[200px] object-cover"
+                className="rounded-xl max-h-[200px] object-cover cursor-pointer"
                 width={300}
                 height={300}
                 layout="responsive"
