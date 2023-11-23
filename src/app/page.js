@@ -11,12 +11,14 @@ export default function Home() {
   return (
     <div className="absolute top-0 left-0 w-full">
       <div className="flex flex-col items-center justify-center w-full">
-        <div className="w-full">
-          <Homepage />
-        </div>
+        <div className="flex flex-col">
+          <div className="w-full">
+            <Homepage />
+          </div>
 
-        <div className="relative w-full">
-          <MainDishes />
+          <div className="relative w-full">
+            <MainDishes />
+          </div>
         </div>
 
         <About />
