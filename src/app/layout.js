@@ -18,11 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={playfair_display.className}>
         <div className="flex flex-col">
-          <div className="relative">
+          <div className="relative w-full">
             <div className="z-50">
               <Navbar />
             </div>
-            <div className="z-20">{children}</div>
+            <div className="z-20 w-full">{children}</div>
           </div>
         </div>
       </body>
