@@ -167,18 +167,22 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center justify-center gap-4">
-            <Link
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/restoranhedonist/"
               className=" bg-[#f28274] cursor-pointer p-3 rounded-full"
             >
               <AiFillInstagram size={25} className="text-white" />
-            </Link>
-            <Link
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.facebook.com/restoranhedonist"
               className=" bg-[#f28274] p-3 rounded-full"
             >
               <AiFillFacebook size={25} className="text-white" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
