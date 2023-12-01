@@ -58,7 +58,7 @@ const Homepage = () => {
           </motion.div>
 
           <Link
-            href="/menu"
+            href="/meni"
             className="uppercase rounded-md text-[15px] lg:text-[18px] px-12 py-2 bg-[#c55a4b] hover:bg-[#833b32] cursor-pointer text-white"
           >
             POGLEDAJTE MENI

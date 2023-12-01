@@ -61,31 +61,33 @@ const Navbar = () => {
           </li>
           <li
             className={`${
-              pathname === "/menu" ? "text-[#f28274]" : `text-[${textColor}]`
+              pathname === "/meni" ? "text-[#f28274]" : `text-[${textColor}]`
             } p-4 hover:decoration-[#f28274] hover:underline font-bold`}
           >
-            <Link href="/menu">Meni</Link>
+            <Link href="/meni">Meni</Link>
           </li>
           <li
             className={`${
-              pathname === "/gallery" ? "text-[#f28274]" : `text-[${textColor}]`
+              pathname === "/galerija"
+                ? "text-[#f28274]"
+                : `text-[${textColor}]`
             } p-4 hover:decoration-[#f28274] hover:underline font-bold`}
           >
-            <Link href="/gallery">Galerija</Link>
+            <Link href="/galerija">Galerija</Link>
           </li>
           <li
             className={`${
-              pathname === "/about" ? "text-[#f28274]" : `text-[${textColor}]`
+              pathname === "/o-nama" ? "text-[#f28274]" : `text-[${textColor}]`
             } p-4 hover:decoration-[#f28274] hover:underline font-bold`}
           >
-            <Link href="/about">O nama</Link>
+            <Link href="/o-nama">O nama</Link>
           </li>
           <li
             className={`${
-              pathname === "/contact" ? "text-[#f28274]" : `text-[${textColor}]`
+              pathname === "/kontakt" ? "text-[#f28274]" : `text-[${textColor}]`
             } p-4 hover:decoration-[#f28274] hover:underline font-bold`}
           >
-            <Link href="/contact">Kontakt</Link>
+            <Link href="/kontakt">Kontakt</Link>
           </li>
         </ul>
 
@@ -131,34 +133,34 @@ const Navbar = () => {
             <li
               onClick={handleNav}
               className={`${
-                pathname === "/menu" && "text-[#f28274]"
+                pathname === "/meni" && "text-[#f28274]"
               } p-4 text-4xl hover:decoration-[#f28274] hover:underline`}
             >
-              <Link href="/menu">Meni</Link>
+              <Link href="/meni">Meni</Link>
             </li>
             <li
               onClick={handleNav}
               className={`${
-                pathname === "/gallery" && "text-[#f28274]"
+                pathname === "/galerija" && "text-[#f28274]"
               } p-4 text-4xl hover:decoration-[#f28274] hover:underline`}
             >
-              <Link href="/gallery">Galerija</Link>
+              <Link href="/galerija">Galerija</Link>
             </li>
             <li
               onClick={handleNav}
               className={`${
-                pathname === "/about" && "text-[#f28274]"
+                pathname === "/o-nama" && "text-[#f28274]"
               } p-4 text-4xl hover:decoration-[#f28274] hover:underline`}
             >
-              <Link href="/about">O nama</Link>
+              <Link href="/o-nama">O nama</Link>
             </li>{" "}
             <li
               onClick={handleNav}
               className={`${
-                pathname === "/contact" && "text-[#f28274]"
+                pathname === "/kontakt" && "text-[#f28274]"
               } p-4 text-4xl hover:decoration-[#f28274] hover:underline`}
             >
-              <Link href="/contact">Kontakt</Link>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
           <div className="flex flex-col items-center justify-center w-full">
