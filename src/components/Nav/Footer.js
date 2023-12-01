@@ -15,7 +15,7 @@ const Footer = () => {
         />
         <div className="flex text-center justify-center items-center gap-3">
           <h1>Prote Todora Srdića BB</h1>|<h1>Banja Luka</h1>|
-          <h1>+387 65 459 90</h1>
+          <h1>+387 65 736 751</h1>
         </div>
       </div>
       <div className="pb-4 flex flex-col gap-4 lg:gap-0 justify-center lg:flex-row lg:justify-between items-center p-3 w-full ">
