@@ -7,7 +7,7 @@ export async function POST(req, res) {
 
     mail = {
       from: `banjaluka.hedonist@gmail.com`,
-      to: `restoran@hedonist.com`,
+      to: `banjaluka.hedonist@gmail.com`,
       subject: `${naslovPoruke}`,
       html: `
 				<table cellspacing="0" border="0" cellpadding="0" width="100%" bgcolor="#36394c"
